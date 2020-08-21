@@ -1,0 +1,178 @@
+[
+    {
+        "id": 20390552535040,
+        "name": "主应用",
+        "module": "main",
+        "component": "layout",
+        "path": "/main",
+        "meta": {
+            "titleEN": "Analysis Center",
+            "titleZH": "分析中心",
+            "icon": "el-icon-platform-eleme",
+            "level": 1,
+            "sort": 2,
+            "isMenu": true,
+            "IsActive": true,
+            "isInnerComponent": true,
+            "iframeUrl": "",
+            "parent_id": 1,
+            "hidden": false,
+            "active_name": "main",
+            "updated_time": "2019-10-25 08: 16: 26"
+        },
+        "children": [
+            {
+                "id": 20400250552320,
+                "name": "导入账单",
+                "component": "a",
+                "path": "/a",
+                "meta": {
+                    "titleEN": "Import Bill",
+                    "titleZH": "导入账单",
+                    "icon": "el-icon-platform-eleme",
+                    "level": 2,
+                    "sort": 1,
+                    "isMenu": true,
+                    "IsActive": true,
+                    "isInnerComponent": true,
+                    "iframeUrl": "",
+                    "parent_id": 20390552535040,
+                    "hidden": true,
+                    "active_name": "/main",
+                    "updated_time": "2019-10-25 01: 04: 45"
+                }
+            },
+            {
+                "id": 20399596933120,
+                "name": "账单分析",
+                "component": "b",
+                "path": "/b",
+                "meta": {
+                    "titleEN": "Bill Analysis",
+                    "titleZH": "账单分析",
+                    "icon": "el-icon-platform-eleme",
+                    "level": 2,
+                    "sort": 1,
+                    "isMenu": true,
+                    "IsActive": true,
+                    "isInnerComponent": true,
+                    "iframeUrl": "",
+                    "parent_id": 20390552535040,
+                    "hidden": false,
+                    "active_name": "/main",
+                    "updated_time": "2019-10-25 01: 04: 55"
+                }
+            },
+            {
+                "id": 20401197264896,
+                "name": "账单详情",
+                "component": "c",
+                "path": "/c",
+                "meta": {
+                    "titleEN": "Bill Detail",
+                    "titleZH": "账单详情",
+                    "icon": "el-icon-platform-eleme",
+                    "level": 2,
+                    "sort": 1,
+                    "isMenu": true,
+                    "IsActive": true,
+                    "isInnerComponent": true,
+                    "iframeUrl": "",
+                    "parent_id": 20390552535040,
+                    "hidden": true,
+                    "active_name": "/main",
+                    "updated_time": "2019-10-25 01: 04: 53"
+                }
+            }
+        ]
+    },
+    {
+        "id": 20390552535040,
+        "name": "子应用",
+        "module": "block",
+        "component": "layout",
+        "path": "/block",
+        "devEntry": "//localhost:9529",
+        "proEntry": "http://beauty.soulferry.xyz",
+        "meta": {
+            "titleEN": "Analysis Center",
+            "titleZH": "子应用中心",
+            "icon": "el-icon-s-opportunity",
+            "level": 1,
+            "sort": 2,
+            "isMenu": true,
+            "IsActive": true,
+            "isInnerComponent": true,
+            "iframeUrl": "",
+            "parent_id": 1,
+            "hidden": false,
+            "active_name": "main",
+            "updated_time": "2019-10-25 08: 16: 26"
+        },
+        "children": [
+            {
+                "id": 20400250552320,
+                "name": "页面一",
+                "component": "a",
+                "path": "/a",
+                "meta": {
+                    "titleEN": "Import Bill",
+                    "titleZH": "页面一",
+                    "icon": "el-icon-platform-eleme",
+                    "level": 2,
+                    "sort": 1,
+                    "isMenu": true,
+                    "IsActive": true,
+                    "isInnerComponent": true,
+                    "iframeUrl": "",
+                    "parent_id": 20390552535040,
+                    "hidden": true,
+                    "active_name": "/main",
+                    "updated_time": "2019-10-25 01: 04: 45"
+                }
+            },
+            {
+                "id": 20399596933120,
+                "name": "页面二",
+                "component": "b",
+                "path": "/b",
+                "meta": {
+                    "titleEN": "Bill Analysis",
+                    "titleZH": "页面二",
+                    "icon": "el-icon-platform-eleme",
+                    "level": 2,
+                    "sort": 1,
+                    "isMenu": true,
+                    "IsActive": true,
+                    "isInnerComponent": true,
+                    "iframeUrl": "",
+                    "parent_id": 20390552535040,
+                    "hidden": false,
+                    "active_name": "/main",
+                    "updated_time": "2019-10-25 01: 04: 55"
+                }
+            },
+            {
+                "id": 20401197264896,
+                "name": "页面三",
+                "component": "c",
+                "path": "/c",
+                "meta": {
+                    "titleEN": "Bill Detail",
+                    "titleZH": "页面三",
+                    "icon": "el-icon-platform-eleme",
+                    "level": 2,
+                    "sort": 1,
+                    "isMenu": true,
+                    "IsActive": true,
+                    "isInnerComponent": true,
+                    "iframeUrl": "",
+                    "parent_id": 20390552535040,
+                    "hidden": true,
+                    "active_name": "/main",
+                    "updated_time": "2019-10-25 01: 04: 53"
+                }
+            }
+        ]
+    }
+]
