@@ -7,13 +7,13 @@ import Conf from '@/config'
 import local from '@/common/utils/local'
 import { filterRouter } from '@/common/utils/filterRouter'
 import initSubApp from '@/permission/initSubApp'
+import _ from 'lodash'
 
 /**
  * 由于菜单是由系统配置的，router部分只做token的检查
  **/
 router.beforeEach((to, from, next) => {
     npg.start()
-    // next()
     const token = cookie.get(Conf.baseKey['token']) || ''
     if (token) {
         if (to.path === '/login') {
@@ -26,9 +26,8 @@ router.beforeEach((to, from, next) => {
             next('/login')
         } else {
             if (!store.getters.menu || !store.getters.menu.length) {
-                store.dispatch('setMenu', menu)
+                store.dispatch('setMenu', _.cloneDeep(menu))
             }
-            console.log(to.path, '0000-----00000')
             // 有cookie 但是没有state说明刷新了
             if (!store.getters.hasSigned) {
                 const _m = menu.filter(el => el.module === 'main')
@@ -48,13 +47,9 @@ router.beforeEach((to, from, next) => {
         }
     } else {
         if (to.path === '/login') {
-            next({replace: true})
+            next()
         } else {
-            if (to.path === '/404') {
-                next()
-            } else {
-                next({ path: '/login', replace: true })
-            }
+            next({ path: '/login', replace: true })
         }
     }
 })
